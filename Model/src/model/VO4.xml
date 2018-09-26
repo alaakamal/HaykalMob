@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="VO4"
+  Version="12.2.1.2.30"
+  InheritPersonalization="merge"
+  OrderBy="jgrd_national_no,jgrd_order_date DESC"
+  BindingStyle="OracleName"
+  CustomQuery="true"
+  FetchMode="FETCH_AS_NEEDED"
+  PageIterMode="Full">
+  <DesignTime>
+    <Attr Name="_isExpertMode" Value="true"/>
+  </DesignTime>
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="model.VO4_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <Variable
+    Name="national_no"
+    Kind="where"
+    Type="java.lang.String"/>
+  <SQLQuery><![CDATA[SELECT job_name,   
+         jgrd_job_date,   
+         jgrd_national_no,  
+         id_name,   
+         jgrd_order_no,   
+         jgrd_order_date   
+    FROM JOB_CORRECT   
+   WHERE jgrd_national_no=:national_no]]></SQLQuery>
+  <ViewAttribute
+    Name="JobName"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Precision="255"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    AliasName="JOB_NAME"
+    Expression="JOB_NAME"
+    SQLType="VARCHAR">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="70"/>
+    </DesignTime>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="JgrdJobDate"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    AliasName="JGRD_JOB_DATE"
+    Expression="JGRD_JOB_DATE"
+    SQLType="DATE"/>
+  <ViewAttribute
+    Name="JgrdNationalNo"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Precision="40"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    AliasName="JGRD_NATIONAL_NO"
+    Expression="JGRD_NATIONAL_NO"
+    SQLType="VARCHAR">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="40"/>
+    </DesignTime>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="IdName"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Precision="11"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    AliasName="ID_NAME"
+    Expression="ID_NAME"
+    SQLType="VARCHAR">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="11"/>
+    </DesignTime>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="JgrdOrderNo"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="JGRD_ORDER_NO"
+    Expression="JGRD_ORDER_NO"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="JgrdOrderDate"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    AliasName="JGRD_ORDER_DATE"
+    Expression="JGRD_ORDER_DATE"
+    SQLType="DATE"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
+</ViewObject>

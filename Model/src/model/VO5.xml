@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="VO5"
+  Version="12.2.1.2.30"
+  InheritPersonalization="merge"
+  OrderBy="LEV_SET_DATE desc ,LEV_SET_CODE"
+  BindingStyle="OracleName"
+  CustomQuery="true"
+  FetchMode="FETCH_AS_NEEDED"
+  PageIterMode="Full">
+  <DesignTime>
+    <Attr Name="_isExpertMode" Value="true"/>
+  </DesignTime>
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="model.VO5_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <Variable
+    Name="national_no"
+    Kind="where"
+    Type="java.lang.String"/>
+  <SQLQuery><![CDATA[select tbl_level_name ,LEV_SET_DATE , lev_national_no,   LEV_SET_CODE,  
+kind_level from level_kind      
+where lev_national_no=:national_no]]></SQLQuery>
+  <ViewAttribute
+    Name="TblLevelName"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Precision="255"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    AliasName="TBL_LEVEL_NAME"
+    Expression="TBL_LEVEL_NAME"
+    SQLType="VARCHAR">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="LevSetDate"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    AliasName="LEV_SET_DATE"
+    Expression="LEV_SET_DATE"
+    SQLType="DATE"/>
+  <ViewAttribute
+    Name="LevNationalNo"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Precision="14"
+    Scale="0"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    AliasName="LEV_NATIONAL_NO"
+    Expression="LEV_NATIONAL_NO"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="LevSetCode"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Precision="2"
+    Scale="0"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    AliasName="LEV_SET_CODE"
+    Expression="LEV_SET_CODE"
+    SQLType="INTEGER"/>
+  <ViewAttribute
+    Name="KindLevel"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Precision="29"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    AliasName="KIND_LEVEL"
+    Expression="KIND_LEVEL"
+    SQLType="VARCHAR">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="29"/>
+    </DesignTime>
+  </ViewAttribute>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
+</ViewObject>

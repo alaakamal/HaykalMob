@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.2.30"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="model.AppModuleImpl"
+  DefClass="model.AppModuleDefImpl"
+  ComponentInterface="model.common.AppModule">
+  <DesignTime>
+    <Attr Name="_isDefCodegen" Value="true"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="VO1_1"
+    ViewObjectName="model.VO1"/>
+  <ViewUsage
+    Name="VO2_1"
+    ViewObjectName="model.VO2"/>
+  <ViewUsage
+    Name="VO3_1"
+    ViewObjectName="model.VO3"/>
+  <ViewUsage
+    Name="VO5_1"
+    ViewObjectName="model.VO5"/>
+  <ViewUsage
+    Name="VO4_1"
+    ViewObjectName="model.VO4"/>
+  <ViewUsage
+    Name="VO6_1"
+    ViewObjectName="model.VO6"/>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="getBranchName"
+      MethodName="getBranchName">
+      <Return
+        Name="_return_type_"
+        Type="java.lang.Integer"/>
+      <Parameter
+        Name="empId"
+        Type="java.lang.Integer"/>
+      <Parameter
+        Name="d1"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="d2"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="yeart"
+        Type="java.lang.Integer"/>
+      <Parameter
+        Name="flage"
+        Type="java.lang.Integer"/>
+    </Method>
+  </ClientInterface>
+</AppModule>

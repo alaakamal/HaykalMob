@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="untitled1PageDef"
+                Package="view.pageDefs">
+    <parameters/>
+    <executables>
+        <variableIterator id="variables"/>
+        <iterator Binds="VO1_1" RangeSize="25" DataControl="AppModuleDataControl" id="VO1_1Iterator"/>
+        <iterator Binds="VO2_1" RangeSize="25" DataControl="AppModuleDataControl" id="VO2_1Iterator"/>
+        <iterator Binds="VO3_1" RangeSize="25" DataControl="AppModuleDataControl" id="VO3_1Iterator"/>
+        <iterator Binds="VO4_1" RangeSize="25" DataControl="AppModuleDataControl" id="VO4_1Iterator"/>
+        <iterator Binds="VO5_1" RangeSize="25" DataControl="AppModuleDataControl" id="VO5_1Iterator"/>
+        <iterator Binds="VO6_1" RangeSize="25" DataControl="AppModuleDataControl" id="VO6_1Iterator"/>
+    </executables>
+    <bindings>
+        <attributeValues IterBinding="VO1_1Iterator" id="Empname">
+            <AttrNames>
+                <Item Value="Empname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Branchname">
+            <AttrNames>
+                <Item Value="Branchname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Empconstantno">
+            <AttrNames>
+                <Item Value="Empconstantno"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Birthdate">
+            <AttrNames>
+                <Item Value="Birthdate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Costcentername">
+            <AttrNames>
+                <Item Value="Costcentername"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Levelname">
+            <AttrNames>
+                <Item Value="Levelname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Jobname">
+            <AttrNames>
+                <Item Value="Jobname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Qualname">
+            <AttrNames>
+                <Item Value="Qualname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="QualDate">
+            <AttrNames>
+                <Item Value="QualDate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Joindate">
+            <AttrNames>
+                <Item Value="Joindate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="NoDays">
+            <AttrNames>
+                <Item Value="NoDays"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="GFixed">
+            <AttrNames>
+                <Item Value="GFixed"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="GVariable">
+            <AttrNames>
+                <Item Value="GVariable"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Total">
+            <AttrNames>
+                <Item Value="Total"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Safi">
+            <AttrNames>
+                <Item Value="Safi"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="C">
+            <AttrNames>
+                <Item Value="C"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Shamelsalary">
+            <AttrNames>
+                <Item Value="Shamelsalary"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="Basicsalary">
+            <AttrNames>
+                <Item Value="Basicsalary"/>
+            </AttrNames>
+        </attributeValues>
+        <action IterBinding="VO1_1Iterator" id="executeWithParams" InstanceName="AppModuleDataControl.VO1_1"
+                DataControl="AppModuleDataControl" RequiresUpdateModel="true" Action="executeWithParams">
+            <NamedData NDName="empNo" NDType="java.lang.String"/>
+            <NamedData NDName="yearT1" NDType="java.lang.String"/>
+        </action>
+        <attributeValues IterBinding="VO2_1Iterator" id="Empname1">
+            <AttrNames>
+                <Item Value="Empname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Branchname1">
+            <AttrNames>
+                <Item Value="Branchname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Basicsalary1">
+            <AttrNames>
+                <Item Value="Basicsalary"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Joindate1">
+            <AttrNames>
+                <Item Value="Joindate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Birthdate1">
+            <AttrNames>
+                <Item Value="Birthdate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Occupationdate">
+            <AttrNames>
+                <Item Value="Occupationdate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Qulificationdate">
+            <AttrNames>
+                <Item Value="Qulificationdate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Leveldate">
+            <AttrNames>
+                <Item Value="Leveldate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Projectname">
+            <AttrNames>
+                <Item Value="Projectname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Jobname1">
+            <AttrNames>
+                <Item Value="Jobname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Qualname1">
+            <AttrNames>
+                <Item Value="Qualname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Levelname1">
+            <AttrNames>
+                <Item Value="Levelname"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Total1">
+            <AttrNames>
+                <Item Value="Total"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Fixedsal">
+            <AttrNames>
+                <Item Value="Fixedsal"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Varsalall">
+            <AttrNames>
+                <Item Value="Varsalall"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Varsalmon">
+            <AttrNames>
+                <Item Value="Varsalmon"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Varsalstand">
+            <AttrNames>
+                <Item Value="Varsalstand"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Netlaw">
+            <AttrNames>
+                <Item Value="Netlaw"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Net">
+            <AttrNames>
+                <Item Value="Net"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Countx">
+            <AttrNames>
+                <Item Value="Countx"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Ceiltotal">
+            <AttrNames>
+                <Item Value="Ceiltotal"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO2_1Iterator" id="Ceilnet">
+            <AttrNames>
+                <Item Value="Ceilnet"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpNameArab">
+            <AttrNames>
+                <Item Value="EmpNameArab"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="BranchANm">
+            <AttrNames>
+                <Item Value="BranchANm"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpBirthDate">
+            <AttrNames>
+                <Item Value="EmpBirthDate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpJoiningDate">
+            <AttrNames>
+                <Item Value="EmpJoiningDate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpBasicSalary">
+            <AttrNames>
+                <Item Value="EmpBasicSalary"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpBasicSalaryDenied">
+            <AttrNames>
+                <Item Value="EmpBasicSalaryDenied"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="TblQualificationName">
+            <AttrNames>
+                <Item Value="TblQualificationName"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpQulificationDate">
+            <AttrNames>
+                <Item Value="EmpQulificationDate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="Rep1">
+            <AttrNames>
+                <Item Value="Rep1"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="Year1">
+            <AttrNames>
+                <Item Value="Year1"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="Rep2">
+            <AttrNames>
+                <Item Value="Rep2"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="Year2">
+            <AttrNames>
+                <Item Value="Year2"/>
+            </AttrNames>
+        </attributeValues>
+        <action IterBinding="VO2_1Iterator" id="executeWithParams2" InstanceName="AppModuleDataControl.VO2_1"
+                DataControl="AppModuleDataControl" RequiresUpdateModel="true" Action="executeWithParams">
+            <NamedData NDName="empNo" NDType="java.lang.String"/>
+            <NamedData NDName="d1" NDType="java.lang.String"/>
+            <NamedData NDName="d2" NDType="java.lang.String"/>
+        </action>
+        <action IterBinding="VO3_1Iterator" id="executeWithParams3" InstanceName="AppModuleDataControl.VO3_1"
+                DataControl="AppModuleDataControl" RequiresUpdateModel="true" Action="executeWithParams">
+            <NamedData NDName="empNo" NDType="oracle.jbo.domain.Number"/>
+        </action>
+        <methodAction id="getBranchName" RequiresUpdateModel="true" Action="invokeMethod" MethodName="getBranchName"
+                      IsViewObjectMethod="false" DataControl="AppModuleDataControl"
+                      InstanceName="bindings.getBranchName.dataControl.dataProvider"
+                      ReturnName="data.AppModuleDataControl.methodResults.getBranchName_getBranchName_dataControl_dataProvider_getBranchName_result">
+            <NamedData NDName="empId" NDType="java.lang.Integer"/>
+            <NamedData NDName="d1" NDType="java.lang.String"/>
+            <NamedData NDName="d2" NDType="java.lang.String"/>
+            <NamedData NDName="yeart" NDType="java.lang.Integer"/>
+            <NamedData NDName="flage" NDType="java.lang.Integer"/>
+        </methodAction>
+        <action IterBinding="VO4_1Iterator" id="exvo4" InstanceName="AppModuleDataControl.VO4_1"
+                DataControl="AppModuleDataControl" RequiresUpdateModel="true" Action="executeWithParams">
+            <NamedData NDName="national_no" NDType="java.lang.String"/>
+        </action>
+        <action IterBinding="VO5_1Iterator" id="exvo5" InstanceName="AppModuleDataControl.VO5_1"
+                DataControl="AppModuleDataControl" RequiresUpdateModel="true" Action="executeWithParams">
+            <NamedData NDName="national_no" NDType="java.lang.String"/>
+        </action>
+        <action IterBinding="VO6_1Iterator" id="exvo6" InstanceName="AppModuleDataControl.VO6_1"
+                DataControl="AppModuleDataControl" RequiresUpdateModel="true" Action="executeWithParams">
+            <NamedData NDName="national_no" NDType="java.lang.String"/>
+        </action>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpNationalNo">
+            <AttrNames>
+                <Item Value="EmpNationalNo"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO1_1Iterator" id="LevelDate">
+            <AttrNames>
+                <Item Value="LevelDate"/>
+            </AttrNames>
+        </attributeValues>
+    </bindings>
+</pageDefinition>

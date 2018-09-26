@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<jazn-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/jazn-data.xsd">
+    <jazn-realm default="jazn.com">
+        <realm>
+            <name>jazn.com</name>
+            <users>
+                <user>
+                    <name>AK</name>
+                    <credentials>{903}JAaodIsn8u/YR3s1AWKAvIjffOaYayA9a9nZcq2MCyA=</credentials>
+                    <display-name>alaa kamal</display-name>
+                    <description></description>
+                </user>
+            </users>
+        </realm>
+    </jazn-realm>
+    <policy-store>
+        <applications>
+            <application>
+                <name>HaykalMob</name>
+                <jazn-policy>
+                    <grant>
+                        <grantee>
+                            <principals>
+                                <principal>
+                                    <class>oracle.security.jps.internal.core.principals.JpsXmlUserImpl</class>
+                                    <name>AK</name>
+                                </principal>
+                            </principals>
+                        </grantee>
+                        <permissions>
+                            <permission>
+                                <class>oracle.adf.share.security.authorization.RegionPermission</class>
+                                <name>view.pageDefs.untitled1PageDef</name>
+                                <actions>customize,grant,personalize,view</actions>
+                            </permission>
+                        </permissions>
+                    </grant>
+                </jazn-policy>
+            </application>
+        </applications>
+    </policy-store>
+    <system-policy/>
+</jazn-data>
