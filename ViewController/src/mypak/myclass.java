@@ -15,6 +15,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 
+import javax.faces.event.ValueChangeEvent;
+
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
@@ -43,6 +45,7 @@ import oracle.binding.BindingContainer;
 import oracle.binding.OperationBinding;
 
 import org.apache.myfaces.trinidad.event.AttributeChangeEvent;
+import org.apache.myfaces.trinidad.event.DisclosureEvent;
 
 public class myclass {
     private RichInputText empno;
@@ -464,6 +467,28 @@ public class myclass {
     }
 
     public void clearVA(AttributeChangeEvent attributeChangeEvent) {
+        cleardata(0);
+        cleardata(1);
+        cleardata(2);
+    }
+
+    public void RGvalueChange(ValueChangeEvent valueChangeEvent) {
+        // Add event code here...
+    }
+
+    public void DL1(DisclosureEvent disclosureEvent) {
+        cleardata(0);
+        cleardata(1);
+        cleardata(2);
+    }
+
+    public void DL2(DisclosureEvent disclosureEvent) {
+        cleardata(0);
+        cleardata(1);
+        cleardata(2);
+    }
+
+    public void DL3(DisclosureEvent disclosureEvent) {
         cleardata(0);
         cleardata(1);
         cleardata(2);

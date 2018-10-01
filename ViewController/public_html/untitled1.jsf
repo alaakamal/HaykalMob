@@ -15,7 +15,7 @@
                                 attributeChangeListener="#{mybean.clearVA}">
                     <af:showDetailItem id="tab1" text="خلال عام " binding="#{mybean.v1}"
                                        attributeChangeListener="#{mybean.clearv1}" inflexibleHeight="50"
-                                       partialTriggers="b1 it1">
+                                       partialTriggers="b1 it1" disclosureListener="#{mybean.DL1}">
                         <af:inputDate label="السنة" id="id15" binding="#{mybean.yeartD}" value="2016">
                             <f:convertDateTime pattern="yyyy"/>
                         </af:inputDate>
@@ -205,7 +205,8 @@
                         </af:panelGroupLayout>
                     </af:showDetailItem>
                     <af:showDetailItem id="tab2" text="خلال فترة " binding="#{mybean.v2}"
-                                       attributeChangeListener="#{mybean.clearv2}" partialTriggers="b1 it1">
+                                       attributeChangeListener="#{mybean.clearv2}" partialTriggers="b1 it1"
+                                       disclosureListener="#{mybean.DL2}">
                         <af:panelGroupLayout id="pgl1" layout="horizontal">
                             <af:inputDate label="من " id="it55" binding="#{mybean.d1}" value="01/2017">
                                 <f:convertDateTime pattern="MM/yyyy" type="date"/>
@@ -410,7 +411,8 @@
                         </af:panelFormLayout>
                     </af:showDetailItem>
                     <af:showDetailItem id="tab3" text="بيان حالة" binding="#{mybean.v3}"
-                                       attributeChangeListener="#{mybean.clearv3}" partialTriggers="b1 it1">
+                                       attributeChangeListener="#{mybean.clearv3}" partialTriggers="b1 it1"
+                                       disclosureListener="#{mybean.DL3}">
                         <af:panelFormLayout id="pfl3">
                             <af:panelGroupLayout id="pgl11" layout="horizontal">
                                 <af:panelGroupLayout id="pgl10" layout="vertical">
@@ -492,6 +494,28 @@
                                         <af:convertNumber groupingUsed="false"
                                                           pattern="#{bindings.EmpBasicSalaryDenied.format}"/>
                                     </af:inputText>
+                                    <af:panelLabelAndMessage label="#{bindings.EmpJoiningDate.hints.label}" id="plam2">
+                                        <af:outputText value="#{bindings.EmpJoiningDate.inputValue}"
+                                                       shortDesc="#{bindings.EmpJoiningDate.hints.tooltip}" id="ot2">
+                                            <af:convertDateTime pattern="#{bindings.EmpJoiningDate.format}"/>
+                                        </af:outputText>
+                                    </af:panelLabelAndMessage>
+                                    <af:panelLabelAndMessage label="#{bindings.EmpContractDate.hints.label}" id="plam1">
+                                        <af:outputText value="#{bindings.EmpContractDate.inputValue}"
+                                                       shortDesc="#{bindings.EmpContractDate.hints.tooltip}" id="ot1">
+                                            <af:convertDateTime pattern="#{bindings.EmpContractDate.format}"/>
+                                        </af:outputText>
+                                    </af:panelLabelAndMessage>
+                                    <af:panelLabelAndMessage label="#{bindings.EmpLevelDate.hints.label}" id="plam3">
+                                        <af:outputText value="#{bindings.EmpLevelDate.inputValue}"
+                                                       shortDesc="#{bindings.EmpLevelDate.hints.tooltip}" id="ot3">
+                                            <af:convertDateTime pattern="#{bindings.EmpLevelDate.format}"/>
+                                        </af:outputText>
+                                    </af:panelLabelAndMessage>
+                                    <af:panelLabelAndMessage label="#{bindings.TblLevelName.hints.label}" id="plam4">
+                                        <af:outputText value="#{bindings.TblLevelName.inputValue}"
+                                                       shortDesc="#{bindings.TblLevelName.hints.tooltip}" id="ot4"/>
+                                    </af:panelLabelAndMessage>
                                     <af:panelGroupLayout id="pgl2" layout="horizontal">
                                         <af:inputText value="#{bindings.Rep1.inputValue}"
                                                       label="#{bindings.Rep1.hints.label}"

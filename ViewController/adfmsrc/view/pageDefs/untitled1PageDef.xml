@@ -319,5 +319,20 @@
                 <Item Value="LevelDate"/>
             </AttrNames>
         </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpContractDate">
+            <AttrNames>
+                <Item Value="EmpContractDate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="EmpLevelDate">
+            <AttrNames>
+                <Item Value="EmpLevelDate"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="VO3_1Iterator" id="TblLevelName">
+            <AttrNames>
+                <Item Value="TblLevelName"/>
+            </AttrNames>
+        </attributeValues>
     </bindings>
 </pageDefinition>

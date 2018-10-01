@@ -4,7 +4,7 @@
 <ViewObject
   xmlns="http://xmlns.oracle.com/bc4j"
   Name="VO3"
-  Version="12.2.1.2.30"
+    Version="12.2.1.11.3"
   InheritPersonalization="merge"
   BindingStyle="OracleName"
   CustomQuery="true"
@@ -386,7 +386,14 @@
         ColumnType="NUMBER"
         AliasName="REP1"
         Expression="REP1"
-        SQLType="NUMERIC"/>
+        SQLType="NUMERIC">
+        <Properties>
+            <SchemaBasedProperties>
+                <LABEL
+                    ResId="model.VO3.Rep1_LABEL"/>
+            </SchemaBasedProperties>
+        </Properties>
+    </ViewAttribute>
     <ViewAttribute
         Name="Year1"
         IsUpdateable="false"
@@ -396,7 +403,14 @@
         ColumnType="NUMBER"
         AliasName="YEAR1"
         Expression="YEAR1"
-        SQLType="NUMERIC"/>
+        SQLType="NUMERIC">
+        <Properties>
+            <SchemaBasedProperties>
+                <LABEL
+                    ResId="model.VO3.Year1_LABEL"/>
+            </SchemaBasedProperties>
+        </Properties>
+    </ViewAttribute>
     <ViewAttribute
         Name="Rep2"
         IsUpdateable="false"
@@ -406,7 +420,14 @@
         ColumnType="NUMBER"
         AliasName="REP2"
         Expression="REP2"
-        SQLType="NUMERIC"/>
+        SQLType="NUMERIC">
+        <Properties>
+            <SchemaBasedProperties>
+                <LABEL
+                    ResId="model.VO3.Rep2_LABEL"/>
+            </SchemaBasedProperties>
+        </Properties>
+    </ViewAttribute>
     <ViewAttribute
         Name="Year2"
         IsUpdateable="false"
@@ -416,7 +437,14 @@
         ColumnType="NUMBER"
         AliasName="YEAR2"
         Expression="YEAR2"
-        SQLType="NUMERIC"/>
+        SQLType="NUMERIC">
+        <Properties>
+            <SchemaBasedProperties>
+                <LABEL
+                    ResId="model.VO3.Year2_LABEL"/>
+            </SchemaBasedProperties>
+        </Properties>
+    </ViewAttribute>
     <ResourceBundle>
         <PropertiesBundle
           PropertiesFile="model.ModelBundle"/>
